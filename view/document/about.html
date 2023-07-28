@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>简介编辑</title>
+		<link rel="stylesheet" href="../../component/pear/css/pear.css" />
+	</head>
+	<body class="pear-container">
+		<div class="layui-row layui-col-space10">
+
+
+			<div class="layui-col-md12">
+				<div class="layui-card">
+					<div class="layui-card-header">新的简介</div>
+					<div class="layui-card-body">
+						<form class="layui-form" action="" onsubmit="return false">
+							<div class="layui-form-item">
+								<textarea name="" id="edit" cols="30" rows="10"></textarea>
+								<div class="layui-input-block">
+									<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+									<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+		<script src="../../component/layui/layui.js"></script>
+		<script src="../../component/pear/pear.js"></script>
+		<script>
+			layui.use(['tinymce', 'util', 'layer','code','element'], function() {
+				var tinymce = layui.tinymce
+				var util = layui.util;
+				
+				layui.code();
+
+				var edit = tinymce.render({
+					elem: "#edit",
+					height: 400
+				});
+
+				util.event('lay-event', {
+					getContent: function() {
+						console.log(edit.getContent())
+						layer.msg("展开控制台查看")
+					}
+				});
+			});
+		</script><script>
+			layui.use('form', function(){
+				var form = layui.form;
+				form.on('submit(formDemo)', function(data){
+					layer.msg(JSON.stringify(data.field));
+					return false;
+				});
+			});
+		</script>
+	</body>
+</html>

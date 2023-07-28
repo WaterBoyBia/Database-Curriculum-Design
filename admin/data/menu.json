@@ -1,0 +1,106 @@
+[
+
+
+  {
+    "id": 1,
+    "title": "精选新闻编辑",
+    "icon": "layui-icon layui-icon-console",
+    "type": 0,
+    "children": [
+      {
+        "id": 11,
+        "title": "精选新闻1",
+        "icon": "layui-icon layui-icon-console",
+        "type": 1,
+        "openType": "_iframe",
+        "href": "view/document/pic1-1.html"
+      },{
+        "id": 12,
+        "title": "精选新闻2",
+        "icon": "layui-icon layui-icon-console",
+        "type": 1,
+        "openType": "_iframe",
+        "href": "view/document/pic1-2.html"
+      },{
+        "id": 13,
+        "title": "精选新闻3",
+        "icon": "layui-icon layui-icon-console",
+        "type": 1,
+        "openType": "_iframe",
+        "href": "view/document/pic1-3.html"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "关于我们设置",
+    "icon": "layui-icon layui-icon-console",
+    "type": 0,
+    "children": [
+      {
+        "id": 21,
+        "title": "简介编辑",
+        "icon": "layui-icon layui-icon-face-cry",
+        "type": 1,
+        "openType": "_iframe",
+        "href": "view/document/about.html"
+      },
+
+      {
+        "id": 22,
+        "title": "展示照片编辑",
+        "icon": "layui-icon layui-icon-face-cry",
+        "type": 0,
+        "children": [
+          {
+            "id": 221,
+            "title": "展示照片1",
+            "icon": "layui-icon layui-icon-face-cry",
+            "type": 1,
+            "openType": "_iframe",
+            "href": "view/document/pic3-1.html"
+          },{
+            "id": 222,
+            "title": "展示照片2",
+            "icon": "layui-icon layui-icon-face-cry",
+            "type": 1,
+            "openType": "_iframe",
+            "href": "view/document/pic3-2.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "新闻管理",
+    "icon": "layui-icon layui-icon-face-smile",
+    "type": 1,
+    "openType": "_iframe",
+    "href": "view/system/news.html"
+  },
+  {
+    "id": 4,
+    "title": "留言管理",
+    "icon": "layui-icon layui-icon-face-smile",
+    "type": 1,
+    "openType": "_iframe",
+    "href": "view/system/liuyan.html"
+  },
+  {
+    "id": 5,
+    "title": "教师管理",
+    "icon": "layui-icon layui-icon-face-cry",
+    "type": 1,
+    "openType": "_iframe",
+    "href": "view/system/teacher.html"
+  },
+  {
+    "id": 6,
+    "title": "账户管理",
+    "icon": "layui-icon layui-icon-face-smile",
+    "type": 1,
+    "openType": "_iframe",
+    "href": "view/system/account.html"
+  }
+]
